@@ -15,6 +15,7 @@ module.exports = () => {
   bodyParser = require('body-parser');
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({extended: false}));
+  //app.use(bodyParser.urlencoded({ extended: false, limit: '50mb'}));
 
   // Load Express Handlebars Module & Setup Express View Engine
   expressHandlebars = require('express-handlebars');

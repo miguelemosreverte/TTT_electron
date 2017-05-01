@@ -1,2 +1,2 @@
-# electron-express
-This is a light weight integration of the express framework, with an electron application.
+# TTT_electron
+Based on TTT_web, it is an electron-based standalone version of TTT

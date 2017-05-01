@@ -5,8 +5,17 @@ config = JSON.parse(fs.readFileSync('config.json'));
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let win
+let win;
 
+
+function start () {
+    
+    
+   // var subpy = require('child_process').spawn('python', [__dirname + '/Moses-API/run_moses.py']);
+    //var subpy = require('child_process').spawn('./dist/hello.exe');    
+    createWindow();
+     
+}
 function createWindow () {
 
   // Instantiate Express App
@@ -37,7 +46,7 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on('ready', start);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
