@@ -54,7 +54,7 @@ module.exports = function() {
     app.post('/Translate', function(req, res) {
         console.log(req.body);
         request({
-          uri: dockerizedMosesIP+":5000/Translate/" + req.body['TranslationInput'],
+          uri: "http://"+dockerizedMosesIP+":5000/Translate/" + req.body['TranslationInput'],
           method: "GET",
         }, function(error, response, body) {
           if (error){
