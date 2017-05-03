@@ -19,7 +19,7 @@ module.exports = () => {
 
   // Load Express Handlebars Module & Setup Express View Engine
   expressHandlebars = require('express-handlebars');
-  app.set('views', __dirname+'/views/'); // Set The Views Directory
+  app.set('views', __dirname+'/views/TTT_views'); // Set The Views Directory
   app.engine('html', expressHandlebars({ // Setup View Engine Middleware
 
     layoutsDir:__dirname + '/views/layouts',

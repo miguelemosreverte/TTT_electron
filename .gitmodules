@@ -1,8 +1,11 @@
 [submodule "WinCompatibleMoses"]
 	path = WinCompatibleMoses
 	url = https://github.com/miguelemosreverte/WinCompatibleMoses
-[submodule "public/TTT_public_folder"]
-	
-	path = public/TTT_public_folder
-	
+[submodule "public/TTT_public_folder"]	
+	path = public/TTT_public_folder	
 	url = https://github.com/miguelemosreverte/TTT_public_folder
+[submodule "app/views/pages/TTT_views"]
+	
+	path = app/views/pages/TTT_views
+	
+	url = https://github.com/miguelemosreverte/TTT_views
