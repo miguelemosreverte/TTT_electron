@@ -8,14 +8,6 @@ config = JSON.parse(fs.readFileSync('config.json'));
 let win;
 
 
-function start () {
-    
-    
-   // var subpy = require('child_process').spawn('python', [__dirname + '/Moses-API/run_moses.py']);
-    //var subpy = require('child_process').spawn('./dist/hello.exe');    
-    createWindow();
-     
-}
 function createWindow () {
 
   // Instantiate Express App
@@ -23,7 +15,7 @@ function createWindow () {
 
   // Create the browser window.
   win = new BrowserWindow();
-  // win.maximize();
+  win.maximize();
 
   // and load the index.html of the app.
   win.loadURL('http://localhost:'+config.server.port);
@@ -33,7 +25,8 @@ function createWindow () {
   // win.webContents.openDevTools();
 
   win.focus();
-
+  win.setMenu(null);
+    
   // Emitted when the window is closed.
   win.on('closed', () => {
     // Dereference the window object, usually you would store windows
@@ -46,7 +39,7 @@ function createWindow () {
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', start);
+app.on('ready', createWindow);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
