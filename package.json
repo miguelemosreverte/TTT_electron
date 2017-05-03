@@ -4,7 +4,9 @@
   "description": "This is a light weight integration of the express framework, with an electron application.",
   "main": "main.js",
   "scripts": {
-    "start": "electron main",
+    "start": "python WinCompatibleMoses/startMosesAPI.py && electron main",
+    "install" : "python WinCompatibleMoses/dockerized_moses_install.py",
+      
     "bower": "bower install",
     "gulp": "gulp",
     "sass": "gulp compile-sass",
