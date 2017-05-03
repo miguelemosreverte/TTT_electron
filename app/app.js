@@ -67,7 +67,7 @@ module.exports = () => {
   app.use(express.static(path.join(__dirname, '/../bower_components/')));
   app.use(express.static(path.join(__dirname, '/../node_modules/')));
   app.use(express.static(path.join(__dirname, '/../controllers/')));
-  app.use(express.static(path.join(__dirname, '/../public/')));
+  app.use(express.static(path.join(__dirname, '/../public/TTT_public_folder/')));
 
   // Load Available Modules For Dependancy Injection Into Models & Routes
   modules = {
