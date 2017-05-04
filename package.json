@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "python WinCompatibleMoses/startMosesAPI.py && electron main",
-    "install" : "python WinCompatibleMoses/dockerized_moses_install.py",
-      
+    "install" : "python WinCompatibleMoses/installer/main.py",
+
     "bower": "bower install",
     "gulp": "gulp",
     "sass": "gulp compile-sass",
