@@ -11,3 +11,8 @@ npm install
 ### how to start
 npm start
 
+### Four requirements for success during installation
+* Install npm
+* Install the latest version of python 2.7 on your computer
+* Use virtualization able processors
+* Check in the BIOS that virtualization is enabled
